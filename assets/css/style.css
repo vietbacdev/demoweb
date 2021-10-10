@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#container {
+
+}
+
+#header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #000;
+    height: 46px;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color:#000;
+    background-color:#ccc;
+}
+
+#nav .subnav {
+    left: 0;
+    top: 100%;
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#nav .subnav a {
+    color: #000;
+    font-size: 15px;
+    min-width: 160px;
+    line-height: 38px;
+    padding: 0 16px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-icon{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+    font-weight: bold;
+}
+
+#header .search-btn {
+    float:right;
+}
+
+#header .search-btn:hover{
+    background-color:#f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url('/assets/img/slider/slider1.jpeg') top center / cover no-repeat;
+}
+
+#slider .text-about {
+    color: #fff;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+#content {
+
+}
+
+#content .about-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .heading-section {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .sub-heading-section {
+    opacity: 0.6;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#content .text-about {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .heading-section {
+
+}
+
+.tour-section .sub-heading-section {
+    
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    padding: 10px 16px;
+    color: #757575;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    padding: 2px 7px;
+    color: #fff;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    color: #fff;
+    float: right;
+    background-color: #000;
+    width: 24px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    margin-top: -2px;
+    margin-right: 16px;
+}
+
+/* places band*/
+.tour-section .places-content {
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+
+.tour-section .places-intro {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.tour-section .places-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-section .places-img:hover {
+    opacity: 0.6;
+}
+
+.tour-section .places-body {
+    background-color: #fff;
+    padding: 20px 16px;
+    font-size: 15px;
+}
+
+.tour-section .places-heading {
+    margin-bottom: 16px;
+}
+
+.tour-section .places-time {
+    margin-bottom: 16px;
+    color: #757575;
+}
+
+.tour-section .places-desc {
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.tour-section .places-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.places-btn:hover {
+    color:#000;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#footer {
+    
+}
